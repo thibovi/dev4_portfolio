@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Recognition</title>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <link rel="stylesheet" href="styles/photorecognition.css">
+    <style>
+        #webcam-container {
+            position: relative;
+        }
+        video {
+            display: block;
+            width: 640px;
+            height: 480px;
+        }
+        canvas {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Object Recognition</h1>
+    <div id="webcam-container">
+        <video id="webcam" autoplay playsinline width="640" height="480"></video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+    <button id="capture-btn">Capture Photo</button>
+    <div id="result"></div>
+
+    <script src="javascript/photorecognition.js"></script>
+    
+</body>
+</html>

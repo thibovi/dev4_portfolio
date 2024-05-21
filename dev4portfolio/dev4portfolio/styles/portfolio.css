@@ -1,0 +1,254 @@
+body {
+    font-family: Nobel-Book, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the top navigation bar */
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the logo image */
+.topnav img {
+    height: 50px;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+.hamburger {
+    margin-right: 20%;
+}
+
+/* Style for the navigation links */
+.topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Style for the active link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 58px;
+    font-weight: normal;
+}
+
+h2 {
+    margin-top: 5%;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.header {
+    height: 50vh;
+    background-size: cover;
+}
+
+.welcomebtn {
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 26px;
+
+}
+.welcomebtn a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.projectsGrid {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+    }
+
+.projectimg {
+    margin: 2%;
+    transition: transform 0.5s ease-out;
+    
+}
+
+.projectimg:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s;
+
+}
+
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footerList {
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.footer  {
+    background-color: #acd6e8;
+    padding-top: 5%;
+    color: white;
+}
+
+.footerImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+
+}
+
+.footerImg img {
+    width: 10%;
+    height: 10%;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: -5%;
+
+}
+
+.footer a {
+    color: white;
+    font-weight: 100;
+}
+
+.footer a:hover {
+    color: black;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .hamburger {
+        margin-right: 0%;
+    }
+
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav img {
+        margin-bottom: 1%;
+        margin-left: 0;
+    }
+
+    .topnav a {
+        font-size: 14px;
+    }
+    .welcomebtn {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .welcomebtn a{
+        font-size: 22px;
+    }
+    .footer img {
+        width: 20%;
+        height: 20%;
+    
+    }
+    .projectimg img {
+        width: 100%;
+        height: 60%;
+    }
+    .projectimg  {
+        align-items: center;
+        width: 30%;
+        height: 60%;
+    }
+    .projectsGrid{
+        border: 0px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .bio img {
+        width: 30%; /* Updated to cover 30% width on desktop or tablet */
+    }
+    .drukwerk h1{
+       margin-top: 0;
+       padding-top: 10%;
+    }
+    .drukwerk h4{
+        margin-top: 1;
+        margin-bottom: 0;
+    }  
+    .biotext {
+        margin-top: 4%
+    } 
+    .table {
+        flex-direction: row;
+    }
+    .footerList {
+        flex-direction: row;
+        margin-left: 8%;
+        margin-right: 8%;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 1000px) { 
+    .projectsGrid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .projectimg {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+
+
+}
