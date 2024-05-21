@@ -1,0 +1,57 @@
+/* Resetting default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting up basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+#score, #time {
+  margin: 10px 0;
+}
+
+#map {
+  height: 400px; /* Adjust this according to your needs */
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+  #map {
+    height: 300px;
+  }
+}
